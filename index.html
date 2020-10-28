@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Royal Tee Productions</title>
+		<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<!-- header start -->
+		<div id="header"><img src="C:/Users/benja/Pictures/RTP.jpg" /></div>
+		<br />
+		<!-- header end -->
+		<div id="menu-outer">
+		  <div class="table">
+		    <ul id="horizontal-list" class="topnav">
+					<li><a class="active" href="C:\Users\benja\Desktop\RTP\index.html" style="border-radius: 15px;">Home</a></li>
+				  <li><a href="C:\Users\benja\Desktop\RTP\booking.html"  style="border-radius: 15px;">Booking</a></li>
+				  <li><a href="C:\Users\benja\Desktop\RTP\models.html" style="border-radius: 15px;">Models</a></li>
+				  <li><a href="C:\Users\benja\Desktop\RTP\about.html" style="border-radius: 15px;">About</a></li>
+		    </ul>
+		  </div>
+		</div>
+
+		<!-- Slideshow container -->
+		<div class="slideshow-container" class="section">
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+		    <img src="C:/Users/benja/Pictures/TMF12801.jpg" style="width:100%;border-radius: 15px;">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="C:/Users/benja/Pictures/TMF12799.jpg" style="width:100%;border-radius: 15px;">
+		  </div>
+
+		  <div class="mySlides fade">
+		    <img src="C:/Users/benja/Pictures/marvel.jpg" style="width:100%;border-radius: 15px;">
+		  </div>
+		</div>
+		<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  for (i = 0; i < slides.length; i++) {
+				    slides[i].style.display = "none";
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}
+				  slides[slideIndex-1].style.display = "block";
+				  setTimeout(showSlides, 3000); // Change image every 3 seconds
+				}
+		</script>
+
+
+		<div class="copyright">
+			&copy; 2020 Royal Tee Productions. All rights reserved.
+		</div>
+
+	</body>
+</html>
