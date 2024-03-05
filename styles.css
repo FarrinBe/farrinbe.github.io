@@ -216,7 +216,7 @@ ul {
 
 
 /* Responsive adjustments */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
     #particles-js {
         display: none; /* Disable particles background on small devices */
     }
