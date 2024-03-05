@@ -161,37 +161,6 @@ p {
     transform: translateY(0);
 }
 
-.timeline-content input,
-.timeline-content textarea,
-.timeline-content button {
-    display: block; /* Makes each element take up the full width */
-    width: 100%; /* Use full width to make sure the padding doesn't cause overflow */
-    margin: 10px 0; /* Adds space above and below each element */
-    padding: 12px; /* Adds internal spacing within each input/textarea/button */
-    box-sizing: border-box; /* Ensures padding doesn't affect the total width/height */
-}
-
-/* Further style the button for consistency */
-.timeline-content button {
-    background-color: #444; /* Example button color */
-    color: white; /* Text color */
-    border: none; /* Removes the border */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    border-radius: 5px; /* Optional: adds rounded corners */
-}
-
-/* Style adjustments for focus state to improve usability */
-.timeline-content input:focus,
-.timeline-content textarea:focus {
-    outline: 2px solid #007bff; /* Adds a blue outline on focus */
-}
-
-/* Style adjustments for hover state of the button */
-.timeline-content button:hover {
-    background-color: #0056b3; /* Darkens the button on hover for feedback */
-}
-
-
 section {
     background-color: #000;
     margin: 10px auto;
@@ -242,6 +211,42 @@ ul {
 
 .white-icon {
     color: white;
+}
+
+/* Styles for the contact form section */
+#contact-form {
+    background-color: #fff; /* White background */
+    border-radius: 15px; /* Rounded borders */
+    padding: 20px; /* Padding around the form */
+    margin: 40px auto; /* Margin for top, bottom, and auto on the sides for center alignment */
+    max-width: 600px; /* Maximum width of the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.contact-form-content {
+    margin-top: 20px; /* Space below the header */
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside the elements */
+    margin-bottom: 15px; /* Space between the form elements */
+    border-radius: 4px; /* Slightly rounded corners for the form elements */
+    border: 1px solid #ccc; /* Border color */
+    box-sizing: border-box; /* Box sizing to include padding and border in width */
+}
+
+#contact-form button {
+    background-color: #007bff; /* Bootstrap primary color for example */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Cursor pointer */
+}
+
+#contact-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
 

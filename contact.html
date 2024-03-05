@@ -20,33 +20,18 @@
       </div>
   </header>
   <main>
-    <section id="contact-info" class="timeline">
-    <h2>Contact Info</h2>
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <address>
-              <p><strong>Email:</strong> <a href="mailto:benjaminfarrington36@gmail.com">benjaminfarrington36@gmail.com</a></p>
-              <p><strong>Phone:</strong> +1 (252) 999-2735</p>
-        </address>
-      </div>
-    </div>
-    <!-- Add more timeline items for other contact info -->
-    </section>
-
-    <section id="contact-form" class="timeline">
+    <section id="contact-form">
         <h2>Get in Touch</h2>
-        <div class="timeline-item">
-          <div class="timeline-content">
-            <form action="process_contact.php" method="post">
-                <input type="text" id="name" name="name" placeholder="Name" required>
-                <br>
-                <input type="email" id="email" name="email" placeholder="Email address" required>
-                <br>
-                <textarea id="message" name="message" rows="4" placeholder="What can I help with?" required></textarea>
-                <br>
-                <button type="submit">Send</button>
-            </form>
-          </div>
+        <div class="contact-form-content">
+          <form action="process_contact.php" method="post">
+              <input type="text" id="name" name="name" placeholder="Name" required>
+              <br>
+              <input type="email" id="email" name="email" placeholder="Email address" required>
+              <br>
+              <textarea id="message" name="message" rows="4" placeholder="What can I help with?" required></textarea>
+              <br>
+              <button type="submit">Send</button>
+          </form>
         </div>
     </section>
   </main>
@@ -62,7 +47,7 @@
               <i class="fab fa-github fa-3x"></i>
           </a>
       </div>
-      <p>&copy; 2023 Benjamin J. Farrington</p>
+      <p style="color:white;">&copy; 2023 Benjamin J. Farrington</p>
   </footer>
   <button id="scrollToTopButton">Scroll to Top</button>
 <script>
