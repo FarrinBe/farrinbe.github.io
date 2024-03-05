@@ -215,24 +215,34 @@ ul {
 }
 
 
-/* Define styles for screens with a width of 600px or less (typical smartphones) */
-@media (max-width: 600px) {
-    /* Example: Adjust font sizes or layout for smaller screens */
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    #particles-js {
+        display: none; /* Disable particles background on small devices */
+    }
+
     body {
-        font-size: 16px;
+        font-size: 16px; /* Adjust body font size for better readability on small screens */
     }
 
-    /* Add more responsive styles as needed */
-}
-
-/* Define styles for screens with a width of 768px or less (typical tablets) */
-@media (max-width: 768px) {
-    /* Example: Adjust layout or padding for tablets */
-    .header-content {
-        flex-direction: column;
+    img {
+        max-width: 100%;
+        height: auto; /* Make images responsive */
     }
 
-    /* Add more responsive styles as needed */
+    .vertical-menu a, button {
+        min-width: 48px; /* Increase tap targets */
+        min-height: 48px; /* Increase tap targets */
+        padding: 12px; /* Increase tap targets */
+        margin: 5px; /* Ensure adequate spacing around tap targets */
+    }
+
+    .vertical-menu {
+        /* Example adjustments for a more mobile-friendly menu */
+        position: static; /* Adjust based on your design, could be fixed or static */
+        width: 100%; /* Full width */
+        text-align: center; /* Center links */
+    }
 }
 
 #scrollToTopButton {
