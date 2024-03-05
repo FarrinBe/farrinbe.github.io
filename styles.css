@@ -87,7 +87,7 @@ header #top-contact{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 20vh;
 }
 /* Center the text and style it */
 h1 {
