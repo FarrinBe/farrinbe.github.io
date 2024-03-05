@@ -46,7 +46,7 @@ body {
     color: white; /* Change to your desired color */
 }
 /* Center the header content and add space to the top */
-header #top {
+header{
     height: 90vh; /* Set the header height to the full viewport height */
     display: flex;
     flex-direction: column;
