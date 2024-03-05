@@ -48,8 +48,8 @@ header #top-contact{
     align-items: center;
 }
 
-/* Menu and Navigation */
-.vertical-menu {
+/* Original Vertical Menu */
+.vertical-menu, .vertical-menu-contact {
     position: fixed;
     top: 50%;
     right: 20px;
@@ -58,18 +58,32 @@ header #top-contact{
     padding: 10px;
 }
 
-.vertical-menu a {
+.vertical-menu a, .vertical-menu-contact a {
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
-    color: #000;
     padding: 10px 15px;
     border-radius: 20px;
+}
+
+.vertical-menu a {
+    color: #000; /* Original text color */
 }
 
 .vertical-menu a:hover, .vertical-menu a.scrolled-link {
     background-color: gray;
     color: white;
+}
+
+/* New Vertical Menu Contact */
+.vertical-menu-contact a {
+    color: white; /* Inverse text color */
+    background-color: #000; /* Inverse background color */
+}
+
+.vertical-menu-contact a:hover {
+    background-color: white; /* Hover background color */
+    color: #000; /* Hover text color */
 }
 
 /* Typography and Text Styles */
@@ -147,20 +161,43 @@ h2, p {
 /* Responsive Adjustments */
 @media screen and (max-width: 1300px) {
     #particles-js {
-        display: none;
+        display: none; /* Disable particles background on small devices */
     }
 
-    body, .vertical-menu a, button {
-        font-size: 16px;
-        min-width: 48px;
-        min-height: 48px;
-        padding: 12px;
-        margin: 5px;
+    body {
+        font-size: 16px; /* Adjust body font size for better readability on small screens */
     }
 
-    .vertical-menu {
-        position: static;
-        width: 100%;
-        text-align: center;
+    img {
+        max-width: 100%;
+        height: auto; /* Make images responsive */
+    }
+
+    .vertical-menu a, .vertical-menu-contact a, button {
+        min-width: 48px; /* Increase tap targets */
+        min-height: 48px; /* Increase tap targets */
+        padding: 12px; /* Increase tap targets */
+        margin: 5px; /* Ensure adequate spacing around tap targets */
+    }
+
+    /* Adjusting the menu for mobile-friendly layout */
+    .vertical-menu, .vertical-menu-contact {
+        position: static; /* Make the menu static to flow with the document */
+        width: 100%; /* Full width */
+        text-align: center; /* Center links */
+        top: auto; /* Remove fixed positioning */
+        right: auto; /* Remove fixed positioning */
+        transform: none; /* Remove transformation */
+    }
+
+    /* Invert colors for mobile layout of .vertical-menu-contact */
+    .vertical-menu-contact a {
+        background-color: transparent; /* Reset background */
+        color: white; /* Keep text color white for contrast */
+    }
+
+    .vertical-menu-contact a:hover {
+        background-color: #000; /* Hover background color */
+        color: white; /* Hover text color */
     }
 }
