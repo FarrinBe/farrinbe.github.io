@@ -74,7 +74,7 @@ body {
 }
 
 /* Center the header content and add space to the top */
-header {
+header #top {
     height: 90vh; /* Set the header height to the full viewport height */
     display: flex;
     flex-direction: column;
