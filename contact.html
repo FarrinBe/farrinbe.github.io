@@ -1,45 +1,58 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Contact Us</title>
+    <title>Contact Us - Benjamin J. Farrington</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Contact Information</h2>
-            <p>Address: 938 Coffee Tree Ln &bull; Rock Hill, SC 29732</p>
-            <p>(252) 999-2735 &bull; <a href="mailto:benjaminfarrington36@gmail.com">benjaminfarrington36@gmail.com</a></p>
-            <p><a href="https://github.com/FarrinBe?tab=repositories" target="_blank">GitHub Profile</a></p>
-            <p>If you have any questions or need assistance, feel free to reach out to me.</p>
-            <address>
-                <p><strong>Address:</strong> 123 Main Street, City, Country</p>
-                <p><strong>Email:</strong> <a href="mailto:contact@example.com">contact@example.com</a></p>
-                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
-            </address>
-        </section>
-
-        <section>
-            <h2>Contact Form</h2>
-            <form action="process_contact.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Your Company Name</p>
-    </footer>
+  <div id="particles-js"></div>
+  <header id="top">
+      <img src="angel-logo-black.png" alt="Logo" id="logo">
+      <h1>Contact Us</h1>
+      <div class="vertical-menu" id="menu">
+        <a id="section1-link" href="./">Home</a>
+        <a id="section2-link" href="./resume">Resume</a>
+      </div>
+  </header>
+  <main>
+      <section>
+          <h2>Contact Information</h2>
+          <p>Address: 938 Coffee Tree Ln &bull; Rock Hill, SC 29732</p>
+          <p>(252) 999-2735 &bull; <a href="mailto:benjaminfarrington36@gmail.com">benjaminfarrington36@gmail.com</a></p>
+          <p><a href="https://github.com/FarrinBe?tab=repositories" target="_blank">GitHub Profile</a></p>
+          <p>If you have any questions or need assistance, feel free to reach out to me.</p>
+      </section>
+      <section>
+          <h2>Contact Form</h2>
+          <form action="process_contact.php" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+              <button type="submit">Submit</button>
+          </form>
+      </section>
+  </main>
+  <footer>
+      <div class="social-icons">
+          <a href="https://www.linkedin.com/in/benjamin-farrington" target="_blank">
+              <i class="fab fa-linkedin fa-3x"></i>
+          </a>
+          <a href="https://www.instagram.com/skinny_benny" target="_blank">
+              <i class="fab fa-instagram fa-3x"></i>
+          </a>
+          <a href="https://github.com/FarrinBe" target="_blank">
+              <i class="fab fa-github fa-3x"></i>
+          </a>
+      </div>
+      <p>&copy; 2023 Benjamin J. Farrington</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
