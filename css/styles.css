@@ -45,36 +45,8 @@ body {
 .vertical-menu a.scrolled-link {
     color: white; /* Change to your desired color */
 }
-
-.vertical-menu-contact {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    text-align: right;
-    padding: 10px;
-}
-
-.vertical-menu-contact a {
-    display: block;
-    margin-bottom: 10px;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-}
-
-.vertical-menu-contact a {
-    color: white; /* Inverse text color */
-    background-color: #000; /* Inverse background color */
-}
-
-.vertical-menu-contact a:hover {
-    background-color: white; /* Hover background color */
-    color: #000; /* Hover text color */
-}
-
 /* Center the header content and add space to the top */
-#top {
+header #top {
     height: 90vh; /* Set the header height to the full viewport height */
     display: flex;
     flex-direction: column;
@@ -82,13 +54,7 @@ body {
     align-items: center;
     padding-top: 20px; /* Add padding to the top for spacing */
 }
-#top-contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-}
+
 /* Center the text and style it */
 h1 {
     font-size: 80px;
@@ -243,44 +209,6 @@ ul {
 .white-icon {
     color: white;
 }
-
-/* Styles for the contact form section */
-#contact-form {
-    background-color: #fff; /* White background */
-    border-radius: 15px; /* Rounded borders */
-    padding: 20px; /* Padding around the form */
-    margin: 40px auto; /* Margin for top, bottom, and auto on the sides for center alignment */
-    max-width: 600px; /* Maximum width of the form */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-}
-
-.contact-form-content {
-    margin-top: 20px; /* Space below the header */
-}
-
-#contact-form input,
-#contact-form textarea,
-#contact-form button {
-    width: 100%; /* Full width */
-    padding: 12px; /* Padding inside the elements */
-    margin-bottom: 15px; /* Space between the form elements */
-    border-radius: 4px; /* Slightly rounded corners for the form elements */
-    border: 1px solid #ccc; /* Border color */
-    box-sizing: border-box; /* Box sizing to include padding and border in width */
-}
-
-#contact-form button {
-    background-color: #007bff; /* Bootstrap primary color for example */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    cursor: pointer; /* Cursor pointer */
-}
-
-#contact-form button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-}
-
-
 /* Responsive adjustments */
 @media screen and (max-width: 1300px) {
 
@@ -305,31 +233,6 @@ ul {
         position: static; /* Adjust based on your design, could be fixed or static */
         width: 100%; /* Full width */
         text-align: center; /* Center links */
-    }
-    .vertical-menu-contact a, button {
-        min-width: 48px; /* Increase tap targets */
-        min-height: 48px; /* Increase tap targets */
-        padding: 12px; /* Increase tap targets */
-        margin: 5px; /* Ensure adequate spacing around tap targets */
-    }
-    .vertical-menu-contact {
-        position: static; /* Make the menu static to flow with the document */
-        width: 100%; /* Full width */
-        text-align: center; /* Center links */
-        top: auto; /* Remove fixed positioning */
-        right: auto; /* Remove fixed positioning */
-        transform: none; /* Remove transformation */
-    }
-
-    /* Invert colors for mobile layout of .vertical-menu-contact */
-    .vertical-menu-contact a {
-        background-color: transparent; /* Reset background */
-        color: white; /* Keep text color white for contrast */
-    }
-
-    .vertical-menu-contact a:hover {
-        background-color: #000; /* Hover background color */
-        color: white; /* Hover text color */
     }
 }
 
