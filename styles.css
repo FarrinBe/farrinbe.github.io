@@ -74,7 +74,7 @@ body {
 }
 
 /* Center the header content and add space to the top */
-header #top {
+#top {
     height: 90vh; /* Set the header height to the full viewport height */
     display: flex;
     flex-direction: column;
@@ -82,12 +82,12 @@ header #top {
     align-items: center;
     padding-top: 20px; /* Add padding to the top for spacing */
 }
-header #top-contact{
+#top-contact{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: auto;
 }
 /* Center the text and style it */
 h1 {
